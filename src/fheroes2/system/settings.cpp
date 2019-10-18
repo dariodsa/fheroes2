@@ -734,13 +734,13 @@ int Settings::BattleSpeed(void) const { return battle_speed; }
 /* return scroll speed */
 int Settings::ScrollSpeed(void) const { return scroll_speed; }
 
-/* set ai speed: 0 - 10 */
+/* set ai speed: 1 - 10 */
 void Settings::SetAIMoveSpeed(int speed) { ai_speed = (10 <= speed ? 10 : speed); }
 
-/* set hero speed: 0 - 10 */
+/* set hero speed: 1 - 10 */
 void Settings::SetHeroesMoveSpeed(int speed){ heroes_speed = (10 <= speed ? 10 : speed); }
 
-/* set battle speed: 0 - 10 */
+/* set battle speed: 1 - 10 */
 void Settings::SetBattleSpeed(int speed) { battle_speed = (10 <= speed ? 10 : speed); }
 
 void Settings::SetBlitSpeed(int speed) { blit_speed = speed; }

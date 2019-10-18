@@ -30,7 +30,7 @@ const char* Speed::String(int speed)
 
     switch(speed)
     {
-	case STANDING:	return str_speed[0];
+	//case STANDING:	return str_speed[0];
 	case CRAWLING:	return str_speed[1];
         case VERYSLOW:	return str_speed[2];
         case SLOW:	return str_speed[3];
@@ -71,9 +71,9 @@ int Speed::GetOriginalFast(int speed)
     {
 	case CRAWLING:	return SLOW;
 	case VERYSLOW:	return AVERAGE;
-	case SLOW:	return FAST;
+	case SLOW:	    return FAST;
 	case AVERAGE:	return VERYFAST;
-	case FAST:	return ULTRAFAST;
+	case FAST:	    return ULTRAFAST;
 	case VERYFAST:	return BLAZING;
 	case ULTRAFAST:
 	case BLAZING:
